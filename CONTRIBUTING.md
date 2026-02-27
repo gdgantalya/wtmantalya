@@ -1,4 +1,4 @@
-# Contributing to wtm-medellin/iwd-2024
+# Contributing to wtm-antalya/iwd-2026
 
 🎉 Thank you for considering contributing to our project! 🎉
 
@@ -10,7 +10,7 @@ The following is a set of guidelines for contributing to this repository. These 
 
 First of all you need to pick up the task you want to work on
 
-1. Go to the [repository's Issues tab](https://github.com/wtm-medellin/iwd-2024/issues).
+1. Go to the []().
 2. Open the task you want to develop.
 3. Click on 'assign yourself' to let others know you're working on it.
 
@@ -23,7 +23,7 @@ Now that you have a task assigned, and the team knows about it, we can move to t
 First, clone the repository to your local machine:
 
 ```bash
-git clone https://github.com/wtm-medellin/iwd-2024.git
+git clone ......
 ```
 
 ## 2. Create a New Branch
@@ -34,7 +34,7 @@ Create a new branch for your contribution:
 git checkout -b feature-<ISSUE-NUMBER>/your-feature-name
 ```
 
-You can find the issue number next to the issues's title, and the name should preferably be in english. For instance, the branch name for [this issue](https://github.com/wtm-medellin/iwd-2024/issues/1) should be `feature-1/update-event-date`
+You can find the issue number next to the issues's title, and the name should preferably be in english. For instance, the branch name for [this issue]() should be `feature-1/update-event-date`
 
 ## 3. Make Changes and Commit
 
@@ -57,7 +57,7 @@ git push origin feature/your-feature-name
 
 ## 5. Create a Pull Request
 
-Go to the [repository's Pull Requests tab](https://github.com/wtm-medellin/iwd-2024/pulls) and click on the "New pull request" button. Compare your branch with the main branch and create the pull request.
+Go to the [repository's Pull Requests tab]() and click on the "New pull request" button. Compare your branch with the main branch and create the pull request.
 
 Make sure to add a description explaining your changes, and if the pull request contains a visual change, add screenshots in multiple viewports.
 
