@@ -1,0 +1,45 @@
+@import '../styles/variables';
+
+.team {
+  &__title {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 74px;
+    letter-spacing: -0.03em;
+    text-align: center;
+
+    @media screen and (min-width: $viewport-md) {
+      flex-basis: 70%;
+      font-size: 52px;
+    }
+
+    @media screen and (min-width: $viewport-md) {
+      flex-basis: 50%;
+      font-size: 64px;
+    }
+
+    &-container {
+      background: url('../assets/backgrounds/team-bg.png');
+      background-position: left;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 358px;
+
+      @media screen and (min-width: $viewport-md) {
+        background-position: center;
+        justify-content: left;
+      }
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 80px 40px;
+    gap: 50px;
+  }
+}

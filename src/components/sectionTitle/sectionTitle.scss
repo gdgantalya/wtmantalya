@@ -1,0 +1,92 @@
+@import '../../styles/variables';
+
+.title {
+  &__background {
+    background-color: $dodger-blue;
+    border-radius: 0 16px 16px 0;
+    box-shadow: 0px 4px 12px 2px rgba($black, 0.25);
+    margin: 13px 0;
+    padding: 25px 0;
+    position: relative;
+
+    @media screen and (min-width: $viewport-md) {
+      padding: 38px 0;
+      margin: 80px 0;
+    }
+
+    @media screen and (min-width: $viewport-lg) {
+      margin: 100px 0 133px 0;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    width: 70px;
+
+    @media screen and (min-width: $viewport-md) {
+      bottom: -50%;
+      right: -10px;
+      width: 160px;
+    }
+
+    @media screen and (min-width: $viewport-lg) {
+      width: 180px;
+    }
+  }
+
+  &__text {
+    color: $white;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 41px;
+    margin: 0;
+    padding: 0 16px;
+
+    @media screen and (min-width: $viewport-md) {
+      font-size: 52px;
+      line-height: 57px;
+      padding: 0 38px;
+    }
+
+    @media screen and (min-width: $viewport-lg) {
+      font-size: 64px;
+      line-height: 73px;
+      padding: 0 175px;
+    }
+  }
+
+  &--right {
+    .title {
+      &__background {
+        border-radius: 16px 0 0 16px;
+      }
+
+      &__img {
+        right: unset;
+        left: 0;
+
+        @media screen and (min-width: $viewport-md) {
+          left: -10px;
+        }
+      }
+
+      &__text {
+        text-align: end;
+      }
+    }
+  }
+
+  &--pink {
+    .title__background {
+      background-color: $bittersweet;
+    }
+  }
+
+  &--green {
+    .title__background {
+      background-color: $caribbean-green;
+    }
+  }
+}

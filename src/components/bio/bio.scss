@@ -1,0 +1,75 @@
+@import '../../styles/variables';
+
+.bio {
+  &__container {
+    text-align: center;
+    width: 230px;
+    padding: 20px;
+    border-radius: 12px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    animation: fadeInUp 0.6s ease-out;
+
+    &:hover {
+      background: rgba(0, 219, 162, 0.08);
+      transform: translateY(-8px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  &__name {
+    color: $bittersweet;
+    font-size: 20px;
+    margin-bottom: 8px;
+    margin-top: 13px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+
+    .bio__container:hover & {
+      color: $green-haze;
+    }
+  }
+
+  &__description {
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.7);
+  }
+
+  &__picture {
+    border-radius: 50%;
+    height: 230px;
+    object-fit: cover;
+    width: 230px;
+    transition: filter 0.3s ease;
+
+    .bio__container:hover & {
+      filter: brightness(1.1);
+    }
+
+    &-container {
+      position: relative;
+
+      &::after {
+        content: '';
+        border: 3px solid $caribbean-green;
+        border-radius: 50%;
+        position: absolute;
+        top: -5px;
+        right: -10px;
+        width: 100%;
+        height: 100%;
+        transition: all 0.3s ease;
+
+        .bio__container:hover & {
+          border-color: $green-haze;
+          transform: scale(1.05);
+        }
+      }
+    }
+  }
+
+  &__social-logo {
+    margin: 5px;
+    width: 25px;
+    filter: invert(1);
+  }
+}

@@ -1,0 +1,76 @@
+@import '../../styles/variables';
+
+.registration {
+  position: relative;
+  z-index: 1;
+  padding: 70px 20px;
+  background: $white;
+  border-radius: 8px;
+  animation: fadeInUp 0.8s ease-out;
+
+  @media screen and (min-width: $viewport-md) {
+    padding: 90px 40px;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 8%;
+    width: 70%;
+    max-width: 1100px;
+    height: 120px;
+    pointer-events: none;
+    background-image: url('../../assets/illustrations/pattern-1.svg');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+    opacity: 0.95;
+    z-index: 0;
+  }
+
+  &__content {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr;
+    gap: 47px;
+    animation: fadeInUp 0.8s ease-out 0.2s both;
+
+    @media screen and (min-width: $viewport-md) {
+      grid-template-columns: 2fr 1fr;
+    }
+
+    @media screen and (min-width: $viewport-lg) {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  &__title {
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 74px;
+    letter-spacing: -0.03em;
+    margin-bottom: 40px;
+    text-align: left;
+    animation: slideInLeft 0.6s ease-out;
+
+    @media screen and (min-width: $viewport-md) {
+      font-size: 64px;
+      margin-bottom: 80px;
+    }
+  }
+
+  &__icon {
+    height: 80px;
+    width: 80px;
+  }
+
+  &__info {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 45px;
+  }
+}

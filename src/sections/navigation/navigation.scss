@@ -1,0 +1,146 @@
+@import '../../styles/variables';
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 15px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: all 0.3s ease;
+  background: linear-gradient(135deg, $caribbean-green 0%, $green-haze 100%);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  padding: 15px 20px;
+
+  @media screen and (min-width: $viewport-md) {
+    background: linear-gradient(135deg, $caribbean-green 0%, $green-haze 100%);
+    box-shadow: 0 4px 15px rgba(0, 219, 162, 0.25);
+    justify-content: space-between;
+    padding: 25px 40px;
+  }
+
+  @media screen and (min-width: $viewport-lg) {
+    padding: 10px 100px;
+  }
+
+  &__logo {
+    width: 45px;
+    display: none;
+    transition: transform 0.3s ease;
+
+    @media screen and (min-width: $viewport-md) {
+      display: block;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+
+    &--gdg {
+      width: 50px;
+      margin-left: 10px;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  &__logos {
+    display: none;
+
+    @media screen and (min-width: $viewport-md) {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+  }
+
+  &__toggle {
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1;
+    display: block;
+    transition: all 0.3s ease;
+
+    @media screen and (min-width: $viewport-md) {
+      display: none;
+    }
+  }
+
+  &__list {
+    background-color: $caribbean-green;
+    box-shadow: 0 1px 5px #878787;
+    display: none;
+    position: absolute;
+    padding: 80px 20px 20px 20px;
+    top: 0;
+    animation: slideInDown 0.4s ease-out;
+
+    @media screen and (min-width: $viewport-md) {
+      background-color: unset;
+      box-shadow: none;
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      padding: 0;
+      position: relative;
+      animation: none;
+    }
+    @media screen and (min-width: $viewport-lg) {
+      gap: 20px;
+    }
+
+    &.is-open {
+      display: block;
+
+      @media screen and (min-width: $viewport-md) {
+        display: flex;
+      }
+    }
+  }
+
+  &__item {
+    text-align: center;
+    padding: 8px 0;
+    transition: all 0.3s ease;
+
+    a {
+      text-decoration: none;
+      position: relative;
+      color: $white;
+      display: inline-block;
+      padding-bottom: 4px;
+      transition: color 0.3s ease;
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background: $white;
+        transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+
+      &:hover {
+        color: lighten($white, 10%);
+
+        &::after {
+          width: 100%;
+        }
+      }
+    }
+
+    @media screen and (min-width: $viewport-md) {
+      padding: 0;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+<svg width="1200" height="140" viewBox="0 0 1200 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- LEFT SIDE blue cross -->
+  <g transform="translate(30, 50)" opacity="0.55">
+    <rect width="30" height="8" fill="#2480F0" rx="2"/>
+    <rect width="8" height="30" fill="#2480F0" rx="2"/>
+  </g>
+  <circle cx="75" cy="115" r="20" fill="#54A6EC" opacity="0.5"/>
+  
+  <!-- RIGHT SIDE -->
+  <circle cx="1130" cy="40" r="28" fill="#00E676" opacity="0.6"/>
+  <circle cx="1090" cy="110" r="23" fill="#69F0AE" opacity="0.5"/>
+</svg>
