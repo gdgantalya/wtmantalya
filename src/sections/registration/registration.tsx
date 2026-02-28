@@ -42,20 +42,20 @@ export default function Registration() {
             <p>
               4 Nisan Cumartesi 2026
               <br />
-              12:00 - 17:00 
+              12:00 - 17:00
             </p>
           </div>
           <div className="registration__info">
             <img className="registration__icon" src={locationIcon} />
             <p>
-              Gişimcilik ve kariyer ofisi etkinliği
+              Gişimcilik ve Kariyer Ofisi
               <br />
-              Antalya
+              Konyaaltı, Antalya, Türkiye
             </p>
           </div>
           <Cta
             text="Kayıt olmak için"
-            url="https://gdg.community.dev/events/details/google-gdg-antalya-presents-iwd26-antalya/"
+            url="https://kommunity.com/gdg-antalya/events/iwd26-antalya-b7070600"
           />
         </div>
       </div>
