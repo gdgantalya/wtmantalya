@@ -30,87 +30,18 @@ interface AgendaBlock {
 }
 
 export default function Agenda() {
-  const [expandedItems, setExpandedItems] = useState<Record<string, boolean>>({})
+  const [expandedItems, setExpandedItems] = useState<Record<string, boolean>>(
+    {}
+  )
 
   const toggleItem = (key: string) => {
-    setExpandedItems(prev => ({
+    setExpandedItems((prev) => ({
       ...prev,
-      [key]: !prev[key]
+      [key]: !prev[key],
     }))
   }
 
   const agendaInfo: AgendaBlock[] = [
-    {
-      block: '09:00',
-      talks: [
-        {
-          topicMain: {
-            from: '9:00',
-            to: '9:30',
-            title: 'Açılış',
-            color: 'blue',
-            speaker: null,
-            slides: null,
-          },
-          topicSecondary: null,
-        },
-        {
-          topicMain: {
-            from: '9:30',
-            to: '10:00',
-            title: '2026 Dünya Kadınlar Gününe hoş geldiniz',
-            color: 'red',
-          },
-          topicSecondary: null,
-        },
-      ],
-    },
-    {
-      block: '10:00',
-      talks: [
-        {
-          topicMain: {
-            from: '10:10',
-            to: '10:40',
-            speaker: 'Rümeysa Kara',
-            title: 'AI/ML',
-            color: 'green',
-            slides:
-              'https://drive.google.com/file/d/1lMV0M65uaeL5ueEUTn6dyxTv-rC755FC/view?usp=sharing',
-          },
-          topicSecondary: null,
-        },
-      ],
-    },
-    {
-      block: '11:00',
-      talks: [
-        {
-          topicMain: {
-            from: '10:50',
-            to: '11:20 AM',
-            title: 'Machine Learning',
-            speaker: 'İrem Kömürcü',
-            color: 'blue',
-            slides:
-              'https://drive.google.com/drive/u/0/folders/1wKRMo8pXYsFpwjGqY7tdwnOkyXoH0G1e',
-          },
-          topicSecondary: null,
-        },
-        {
-          topicMain: {
-            from: '11:30',
-            to: '12:00',
-            title: 'Angular',
-            speaker: 'Selin Karagülle Tunç',
-            color: 'green',
-            slides:
-              'https://drive.google.com/file/d/17lsvutbFBLA1L8ajv8EcL4oXtSIxareR/view?usp=sharing',
-          },
-          topicSecondary: null,
-        },
-      ],
-    },
     {
       block: '12:00',
       talks: [
@@ -118,7 +49,7 @@ export default function Agenda() {
           topicMain: {
             from: '12:00',
             to: '13:00',
-            title: 'Öğlen Arası',
+            title: 'Kayıt ve Açılış',
             color: 'red',
           },
           topicSecondary: null,
@@ -149,10 +80,11 @@ export default function Agenda() {
           topicMain: {
             from: '14:00',
             to: '14:45',
-            title: 'Community Manager',
+            title: 'Konuşmacı 2',
             color: 'green',
-            speaker: 'Beyza Sunay Güler',
-            slides: null,
+            speaker: 'Konuşmacı İsmi',
+            slides:
+              'https://drive.google.com/file/d/1yHLnZ2yfye-Io2b9Zu4VBeodrHIvZ4iB/view',
           },
           topicSecondary: null,
         },
@@ -166,40 +98,10 @@ export default function Agenda() {
             from: '15:00',
             to: '16:45',
             title: 'AI',
-            speaker: 'Merve Noyan',
+            speaker: 'Konuşmacı İsmi',
             color: 'red',
-            slides: null,
-          },
-          topicSecondary: {
-            title:
-              'Mentorías para empleabilidad y hoja de ruta profesional',
-            from: '15:30',
-            to: '16:45',
-            color: 'blue',
-          },
-        },
-      ],
-    },
-    {
-      block: '17:00',
-      talks: [
-        {
-          topicMain: {
-            from: '17:00',
-            to: '17:30',
-            title: 'AI',
-            speaker: 'Nisanur Ilhan',
-            color: 'blue',
-            slides: null,
-          },
-          topicSecondary: null,
-        },
-        {
-          topicMain: {
-            from: '17:30',
-            to: '18:00',
-            title: 'Networking',
-            color: 'green',
+            slides:
+              'https://drive.google.com/file/d/1yHLnZ2yfye-Io2b9Zu4VBeodrHIvZ4iB/view',
           },
           topicSecondary: null,
         },
@@ -239,27 +141,29 @@ export default function Agenda() {
                       <span className="agenda__schedule__item-time">
                         {topicMain.from} - {topicMain.to}
                       </span>
-                      <span className="agenda__schedule__item-separator">:</span>
+                      <span className="agenda__schedule__item-separator">
+                        :
+                      </span>
                       <span className="agenda__schedule__item-name">
                         {topicMain.title}
                       </span>
                     </div>
-                    <button 
+                    <button
                       className="agenda__schedule__item-toggle"
                       aria-label={isExpanded ? 'Kapat' : 'Aç'}
                     >
-                      <svg 
-                        width="24" 
-                        height="24" 
-                        viewBox="0 0 24 24" 
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
                         fill="none"
                         className={`agenda__schedule__item-icon ${isExpanded ? 'agenda__schedule__item-icon--rotated' : ''}`}
                       >
-                        <path 
-                          d="M6 9L12 15L18 9" 
-                          stroke="currentColor" 
-                          strokeWidth="2" 
-                          strokeLinecap="round" 
+                        <path
+                          d="M6 9L12 15L18 9"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
                           strokeLinejoin="round"
                         />
                       </svg>
@@ -274,8 +178,8 @@ export default function Agenda() {
                         </div>
                       )}
                       {topicMain.slides && (
-                        <a 
-                          href={topicMain.slides} 
+                        <a
+                          href={topicMain.slides}
                           target="_blank"
                           rel="noopener noreferrer"
                           className="agenda__schedule__item-slides"
@@ -285,7 +189,9 @@ export default function Agenda() {
                         </a>
                       )}
                       {topicSecondary && (
-                        <div className={`agenda__schedule__item-secondary agenda__schedule__item-secondary--${topicSecondary.color}`}>
+                        <div
+                          className={`agenda__schedule__item-secondary agenda__schedule__item-secondary--${topicSecondary.color}`}
+                        >
                           <span className="agenda__schedule__item-time">
                             {topicSecondary.from} - {topicSecondary.to}
                           </span>

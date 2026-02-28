@@ -23,7 +23,7 @@ export default function Navigation() {
   const navItems = [
     {
       text: 'Kayıt',
-      url: 'https://gdg.community.dev/events/details/google-gdg-antalya-presents-iwd26-antalya/',
+      url: 'https://kommunity.com/gdg-antalya/events/iwd26-antalya-b7070600',
     },
     {
       text: 'Etkinlik Hakkında',
@@ -44,7 +44,7 @@ export default function Navigation() {
       text: 'Program',
       url: '/',
       id: '#agenda',
-    }
+    },
   ]
 
   return (
