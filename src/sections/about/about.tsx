@@ -1,4 +1,5 @@
 import './about.scss'
+import tanitimPdf from '../../assets/ıwd antalya 2026 tanıtım.pdf'
 
 export default function About() {
   return (
@@ -15,20 +16,21 @@ export default function About() {
         Bu yıl biz de GDG Antalya ve Women Techmakers Antalya olarak IWD 2026’i kutlamak için heyecanla hazırlanıyoruz. Çünkü biliyoruz ki teknoloji, ancak çeşitlilikle gelişir 💪
           <span className="about__slogan">'BreakThePattern'</span>,
         </p>
-        <a
+        {/* <a
           href="https://developers.google.com/womentechmakers?hl=es-419"
           className="about__link"
           target="_blank"
         >
           womentechmakers.com
-        </a>
+        </a> */}
         <p>   </p>
         <a
-          href="https://gdg.community.dev/gdg-antalya/"
+          href={tanitimPdf}
           className="about__link"
           target="_blank"
+          rel="noopener noreferrer"
         >
-          GDG Antalya
+          IWD Antalya 2026 Tanıtım
         </a>
       </div>
     </section>
