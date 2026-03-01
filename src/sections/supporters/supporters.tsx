@@ -44,15 +44,15 @@ export default function Supporters() {
             </p>
             <br />
 <p>
-  Bize{' '}
-  <a
+  {/* Bize{' '} */}
+  {/* <a
     href="https://docs.google.com/forms/d/e/1FAIpQLScfCXOVioReCPgkIcgnTdAqvq7F1DQpkU2ehdAB-2vTwgQKEw/viewform"
     target="_blank"
     rel="noopener noreferrer"
     className="supporters__email"
   >
     buradan ulaşabilirsiniz
-  </a>
+  </a> */}
 </p>
           </div>
           <div className="supporters__cta">
