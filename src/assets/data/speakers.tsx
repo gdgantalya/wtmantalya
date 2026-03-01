@@ -1,34 +1,34 @@
 const speakers = [
   {
-    name: 'Şeçil Karaca Koçoğlu',
-    picture: 'secılkaracaoglu.png',
-    bio: "SunExpress şirketinde Aircraft Systems Engineering Manager and Head of Design ",
+    name: 'Buse Altaç',
+    picture: 'busealtac.png',
+    bio: "Android Developer at Trendyol Group ",
      social: [
       {
         name: "linkedin",
-        url: "https://www.linkedin.com/in/secilkaracakocoglu/"
+        url: "https://www.linkedin.com/in/busealtac/"
       }
     ]
   },
   {
-    name: 'Deniz Gül',
-    picture: 'denızgul.png',
-    bio: "Co-Founder of Tamamliyo /odeon",
+    name: 'Kadriye Macit',
+    picture: 'kadrıyemacıd.png',
+    bio: "Senior Mobile Developer at Alleo || Google Developer Expert for Flutter&Dart",
      social: [
       {
         name: "linkedin",
-        url: "https://www.linkedin.com/in/denizgul/"
+        url: "https://www.linkedin.com/in/kadriyemacit/"
       }
     ]
   },
   {
-    name: 'Buse Sözer',
-    picture: 'busesozer.png',
-    bio: "Senior Data Product Owner at corendon",
+    name: 'konuşmacı 3',
+    picture: '',
+    bio: "",
      social: [
       {
         name: "linkedin",
-        url: "https://www.linkedin.com/in/buse-sozer/"
+        url: ""
       }
     ]
   },
