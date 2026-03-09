@@ -8,7 +8,7 @@ export default function Footer() {
     { name: 'instagram', link: 'https://www.instagram.com/gdgantalya' },
     { name: 'linkedin', link: 'https://www.linkedin.com/company/gdg-antalya/posts/?feedView=all' },
     {
-      name: 'facebook',
+      name: 'facebook2',
       link: 'https://www.facebook.com/gdgantalya/?locale=tr_TR',
     },
     { name: 'x', link: 'https://twitter.com/gdgantalya' },
