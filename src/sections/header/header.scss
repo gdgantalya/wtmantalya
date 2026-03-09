@@ -17,11 +17,15 @@
   position: relative;
 
   @media screen and (max-width: $viewport-md) {
-    background-image: url('../../assets/backgrounds/header-sm.png');
+    --nav-safe-offset: 0px;
+    margin-top: 0;
+    background-image: url('../../assets/backgrounds/header-smn.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     background-color: #1fe7b5;
+    align-items: flex-start;
+    text-align: left;
   }
   
   @media screen and (min-width: $viewport-md) {
@@ -59,12 +63,24 @@
   &__text-container {
     display: grid;
     height: 400px;
+
+     @media screen and (max-width: $viewport-md) {
+      width: 100%;
+      justify-items: start;
+      align-items: start;
+      text-align: left;
+    }
+
     @media screen and (min-width: $viewport-md) {
       width: 60%;
     }
     @media screen and (min-width: $viewport-xl) {
       width: 50%;
     }
+     @media screen and (max-width: $viewport-md) {
+    height: auto;
+    gap: 8px; 
+  }
   }
   &__title {
     align-self: start;
@@ -80,10 +96,24 @@
     align-self: end;
     text-align: center;
     transform: translateY(140px);
-    color: $bittersweet;
+    color: $black;
+    font-weight: 700;
+    
+    @media screen and (max-width: $viewport-md) {
+      text-align: left;
+      transform: translateY(6px);
+    }
 
     @media screen and (min-width: $viewport-md) {
       font-size: 20px;
+    }
+  }
+
+  &__mobile-content {
+    display: block;
+
+    @media screen and (min-width: $viewport-md) {
+      display: none;
     }
   }
 
@@ -93,8 +123,8 @@
     width: 330px;
 
     @media screen and (min-width: $viewport-md) {
-      margin-top: 0;
-      margin-bottom: 74px;
+      margin-top: 20px;
+      margin-bottom: 12px;
       width: 396px;
     }
   }
