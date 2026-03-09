@@ -1,4 +1,4 @@
-# Women Tech Makers IWD 2026 Website
+# Women Tech Makers IWD 2026
 
 This repository contains the code for the Women Tech Makers International Women's Day 2026 website hosted at [).
 
