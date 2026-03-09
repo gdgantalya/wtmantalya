@@ -15,6 +15,7 @@
   flex-direction: column;
   justify-content: flex-start;
   position: relative;
+  padding-bottom: 80px;
 
   @media screen and (max-width: $viewport-md) {
     --nav-safe-offset: 0px;
@@ -40,10 +41,11 @@
 
   &__title,
   &__subtitle {
-    font-size: 28px;
+    font-size: clamp(22px, 6vw, 52px);
     font-weight: 700;
     color: rgba(0, 0, 0, 0.85); // daha yumuşak siyah
-
+    margin: 0;
+    line-height: 1.1;
     @media screen and (min-width: $viewport-md) {
       font-size: 36px;
     }
@@ -62,7 +64,10 @@
 
   &__text-container {
     display: grid;
-    height: 400px;
+    height: auto;
+    margin-top: -10px;
+    gap: 5px;
+    max-width: 90%;
 
      @media screen and (max-width: $viewport-md) {
       width: 100%;
@@ -79,7 +84,7 @@
     }
      @media screen and (max-width: $viewport-md) {
     height: auto;
-    gap: 8px; 
+    gap: 5px; 
   }
   }
   &__title {
@@ -101,7 +106,7 @@
     
     @media screen and (max-width: $viewport-md) {
       text-align: left;
-      transform: translateY(6px);
+      transform: none;
     }
 
     @media screen and (min-width: $viewport-md) {
@@ -118,9 +123,9 @@
   }
 
   &__logo {
-    margin-top: 60px;
-    margin-bottom: 24px;
-    width: 330px;
+    margin-top: 20px;
+    margin-bottom: 16px;
+    width: clamp(180px, 60vw, 330px);
 
     @media screen and (min-width: $viewport-md) {
       margin-top: 20px;
