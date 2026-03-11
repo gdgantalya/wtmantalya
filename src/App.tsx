@@ -1,6 +1,6 @@
 import './App.css'
 import Header from './sections/header/header'
-import About from './sections/about/about'
+// import About from './sections/about/about'
 import Speakers from './sections/speakers/speakers'
 import Supporters from './sections/supporters/supporters'
 import Agenda from './sections/agenda/agenda'
@@ -14,7 +14,7 @@ function App() {
       <Navigation />
       <Header />
       <Registration />
-      <About />
+      {/* <About /> */}
       <Speakers />
       <Agenda />
       <Supporters />

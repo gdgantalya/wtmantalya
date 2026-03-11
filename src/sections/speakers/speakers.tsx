@@ -14,7 +14,7 @@ export default function Speakers() {
         <SectionTitle
           text={SECTION.TITLE}
           direction="left"
-          style="blue"
+          style="green"
           assetName="mic"
         />
       </div>
