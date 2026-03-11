@@ -3,7 +3,7 @@
 .footer {
   position: relative;
   padding: 40px 20px;
- background: linear-gradient(135deg, $picton-blue 0%, lighten($dodger-blue,6%) 40%, $dodger-blue 70%, $blue 100%);
+ background: $dark-blue;
   color: $white;
   overflow: hidden;
 

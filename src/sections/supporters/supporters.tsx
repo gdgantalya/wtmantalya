@@ -11,7 +11,7 @@ export default function Supporters() {
           <SectionTitle
             text="Sponsorlar"
             direction="right"
-            style="blue"
+            style="green"
             assetName="badge"
           />
         </div>
@@ -29,7 +29,10 @@ export default function Supporters() {
               return (
                 <li key={index}>
                   <a href={element.url} target="blank">
-                    <img src={image} alt={`${element.name} logo`} />
+                    <div className="supporters__card-inner">
+                      <img src={image} alt={`${element.name} logo`} />
+                    </div>
+                    {/* <span className="supporters__card-name"></span> */}
                   </a>
                 </li>
               )
@@ -39,21 +42,10 @@ export default function Supporters() {
 
         <div className="supporters__content">
           <div className="supporters__text">
-            <p>
+            {/* <p>
               Sponsor olmak için
             </p>
-            <br />
-<p>
-  {/* Bize{' '} */}
-  {/* <a
-    href="https://docs.google.com/forms/d/e/1FAIpQLScfCXOVioReCPgkIcgnTdAqvq7F1DQpkU2ehdAB-2vTwgQKEw/viewform"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="supporters__email"
-  >
-    buradan ulaşabilirsiniz
-  </a> */}
-</p>
+            <br /> */}
           </div>
           <div className="supporters__cta">
             <Cta text="Sponsor Ol" url="https://docs.google.com/forms/d/e/1FAIpQLScfCXOVioReCPgkIcgnTdAqvq7F1DQpkU2ehdAB-2vTwgQKEw/viewform?" />
