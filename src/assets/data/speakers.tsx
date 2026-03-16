@@ -22,13 +22,13 @@ const speakers = [
     ]
   },
   {
-    name: 'konuşmacı 3',
-    picture: '',
-    bio: "",
+    name: 'Aylin Bederli Tumay',
+    picture: 'Aylin-bederlı-tumay.PNG',
+    bio: "Antalya OSB Teknopark müdürü ",
      social: [
       {
         name: "linkedin",
-        url: ""
+        url: "https://www.linkedin.com/in/aylin-bederli-tumay-ph-d-a242842a/"
       }
     ]
   },
