@@ -61,47 +61,56 @@ export default function Agenda() {
       talks: [
         {
           topicMain: {
-            from: '13:15',
-            to: '13:45',
-            title: 'Flutter&Dart &  Firebase',
+            from: '13:00',
+            to: '13:30',
+            title: 'Konuşma 1 Konusu',
             color: 'blue',
-            speaker: 'Kadriye Macit',
-            slides:
-              'https://drive.google.com/file/d/1yHLnZ2yfye-Io2b9Zu4VBeodrHIvZ4iB/view',
+            speaker: 'Konuşmacı 1',
           },
           topicSecondary: null,
         },
       ],
     },
     {
-      block: '14:00',
+      block: '13:50',
       talks: [
         {
           topicMain: {
-            from: '14:00',
-            to: '14:45',
-            title: 'Konuşmacı 2',
+            from: '13:50',
+            to: '14:30',
+            title: 'Konuşma 2 Konusu',
             color: 'green',
-            speaker: 'Konuşmacı İsmi',
-            slides:
-              'https://drive.google.com/file/d/1yHLnZ2yfye-Io2b9Zu4VBeodrHIvZ4iB/view',
+            speaker: 'Konuşmacı 2',
           },
           topicSecondary: null,
         },
       ],
     },
     {
-      block: '15:00',
+      block: '14:50',
       talks: [
         {
           topicMain: {
-            from: '15:00',
-            to: '16:45',
-            title: 'AI',
-            speaker: 'Konuşmacı İsmi',
+            from: '14:50',
+            to: '15:30',
+            title: 'Konuşma 3 Konusu',
+            speaker: 'Konuşmacı 3',
             color: 'red',
-            slides:
-              'https://drive.google.com/file/d/1yHLnZ2yfye-Io2b9Zu4VBeodrHIvZ4iB/view',
+          },
+          topicSecondary: null,
+        },
+      ],
+    },
+    {
+      block: '15:30',
+      talks: [
+        {
+          topicMain: {
+            from: '15:30',
+            to: '16:00',
+            title: 'Kapanış ve Hediye Çekilişi',
+            speaker: 'Hediye Çekilişi',
+            color: 'blue',
           },
           topicSecondary: null,
         },
@@ -121,7 +130,7 @@ export default function Agenda() {
       </div>
       <div className="agenda__container">
         <h2 className="agenda__sub-header">
-          #WTMBreakThePattern 4 Nisan Cumartesi 2026 - 12:00 - 17:00
+          #BreakThePattern 4 Nisan Cumartesi 2026 - 12:00 - 17:00
         </h2>
 
         <div className="agenda__schedule">

@@ -48,7 +48,10 @@ export default function Supporters() {
             <br /> */}
           </div>
           <div className="supporters__cta">
-            <Cta text="Sponsor Ol" url="https://docs.google.com/forms/d/e/1FAIpQLScfCXOVioReCPgkIcgnTdAqvq7F1DQpkU2ehdAB-2vTwgQKEw/viewform?" />
+            <Cta
+              text="Sponsor Ol"
+              url="https://docs.google.com/forms/d/e/1FAIpQLScfCXOVioReCPgkIcgnTdAqvq7F1DQpkU2ehdAB-2vTwgQKEw/viewform?"
+            />
           </div>
         </div>
       </div>

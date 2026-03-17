@@ -1,6 +1,5 @@
 import './navigation.scss'
-import WTMLogo from '../../assets/old/img/WTMLogo.svg'
-import MenuLogo from '../../assets/old/img/menu.svg'
+import gdgLogo from '../../assets/GDG Professional - Horizontal - Dark adlı dosyanın beyaz.png'
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
 
@@ -36,14 +35,14 @@ export default function Navigation() {
       id: '#speakers',
     },
     {
-      text: 'Sponsorlar',
-      url: '/',
-      id: '#supporters',
-    },
-    {
       text: 'Program',
       url: '/',
       id: '#agenda',
+    },
+    {
+      text: 'Sponsorlar',
+      url: '/',
+      id: '#supporters',
     },
   ]
 
@@ -51,15 +50,18 @@ export default function Navigation() {
     <nav className="navigation">
       <div className="navigation__logo">
         <Link to="/">
-          <img src={WTMLogo} alt="WTM Logo" />
+          <img src={gdgLogo} alt="GDG Logo" />
         </Link>
       </div>
-      <div
+      <button
         className={`navigation__toggle ${isOpen ? 'is-active' : ''}`}
         onClick={toggleMenu}
+        aria-label="Menu"
       >
-        <img className="hamburger-icon" src={MenuLogo} alt="Menu icon" />
-      </div>
+        <span className="navigation__toggle-line" />
+        <span className="navigation__toggle-line" />
+        <span className="navigation__toggle-line" />
+      </button>
 
       <ul className={`navigation__list ${isOpen ? 'is-open' : ''}`}>
         {navItems.map((element, index) => {

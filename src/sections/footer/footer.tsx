@@ -1,12 +1,14 @@
 import './footer.scss'
-import wtmLogo from '../../assets/wtm-logo-bw.svg'
-import gdgLogo from '../../assets/GDG Professional - Horizontal - Light adlı dosyanın kopyası.png'
-import gdgLogoStack from '../../assets/GDG Professional - Stacked - Light adlı dosyanın kopyası.png'
+import wtmLogo from '../../assets/logos-supporters/WTM_Logo_Horizontal Logo with Technovation.png'
+import gdgLogo from '../../assets/GDG Professional - Horizontal - Dark adlı dosyanın beyaz.png'
 
 export default function Footer() {
   const socialLinks = [
     { name: 'instagram', link: 'https://www.instagram.com/gdgantalya' },
-    { name: 'linkedin', link: 'https://www.linkedin.com/company/gdg-antalya/posts/?feedView=all' },
+    {
+      name: 'linkedin',
+      link: 'https://www.linkedin.com/company/gdg-antalya/posts/?feedView=all',
+    },
     {
       name: 'facebook2',
       link: 'https://www.facebook.com/gdgantalya/?locale=tr_TR',
@@ -22,8 +24,8 @@ export default function Footer() {
     },
     { text: 'Etkinlik Hakkında', url: '/', id: '#about' },
     { text: 'Konuşmacılar', url: '/', id: '#speakers' },
-    { text: 'Sponsorlar', url: '/', id: '#supporters' },
     { text: 'Program', url: '/', id: '#agenda' },
+    { text: 'Sponsorlar', url: '/', id: '#supporters' },
   ]
 
   const navColumns = [
@@ -38,8 +40,11 @@ export default function Footer() {
     ],
     // right column: stacked community/contact links
     [
-      { label: 'Topluluğumuza Katıl', link: 'https://gdg.community.dev/gdg-antalya/' },
-      { label: 'Bize Ulaş', link: '#contact' },
+      {
+        label: 'Topluluğumuza Katıl',
+        link: 'https://gdg.community.dev/gdg-antalya/',
+      },
+      { label: 'Bize Ulaş', link: 'mailto:gdgantalya@gmail.com' },
     ],
   ]
 
@@ -49,18 +54,17 @@ export default function Footer() {
         <div className="footer__left">
           <div className="footer__logos">
             <img src={wtmLogo} alt="WTM Logo" />
-            <img 
-              src={gdgLogo} 
-              alt="GDG Logo"  
-              className="footer__logo--horizontal"/>
             <img
-              src={gdgLogoStack}
-              alt="GDG Logo Stacked"
+              src={gdgLogo}
+              alt="GDG Logo"
+              className="footer__logo--horizontal"
+            />
+            <img
+              src={gdgLogo}
+              alt="GDG Logo"
               className="footer__logo--stacked"
             />
           </div>
-
-          <p>WTM Antalya 2026</p>
 
           <div className="footer__social">
             <p>Sosyal medyada bizi takip et</p>
@@ -87,7 +91,7 @@ export default function Footer() {
           </div>
 
           <p className="footer__copyright">
-            @WTMANTALYA2026. Tüm Hakları Saklıdır
+            @GDGAntalya2026. Tüm Hakları Saklıdır
           </p>
         </div>
 

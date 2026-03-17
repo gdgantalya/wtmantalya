@@ -24,16 +24,17 @@ export default function Bio(props: bioProps) {
       <h2 className="bio__name">{props.name}</h2>
       <p className="bio__description">{props.bio}</p>
       {props.social && (
-        <div>
+        <div className="bio__social">
           {props.social?.map((social, index) => {
-            const socialLogo = new URL(
-              `../../assets/social/${social.name}.svg`,
-              import.meta.url
-            ).href
-
             return (
-              <a href={social.url} target="blank" key={index}>
-                <img src={socialLogo} className="bio__social-logo" />
+              <a
+                href={social.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                key={index}
+                className="bio__social-btn"
+              >
+                <span>LinkedIn</span>
               </a>
             )
           })}

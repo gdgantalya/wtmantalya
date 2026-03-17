@@ -3,14 +3,13 @@
 .about {
   position: relative;
   z-index: 1;
-  padding: 60px 20px;
-  background: linear-gradient(180deg, rgba(84, 166, 236, 0.06) 0%, rgba(255, 255, 255, 0.5) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(84, 166, 236, 0.06) 0%,
+    rgba(255, 255, 255, 0.5) 100%
+  );
   border-radius: 8px;
   animation: fadeInUp 0.8s ease-out;
-
-  @media screen and (min-width: $viewport-md) {
-    padding: 80px 40px;
-  }
 
   &__text {
     padding-bottom: 20px;

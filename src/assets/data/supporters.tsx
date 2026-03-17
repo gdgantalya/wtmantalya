@@ -1,7 +1,7 @@
 const sponsors = [
   {
     name: 'WTM',
-    logo: 'WTM_Logo_Horizontal Logo with Technovation',
+    logo: 'WTM_Logo_Horizontal Logo',
     url: 'https://www.technovation.org/women-techmakers/',
   },
   // {

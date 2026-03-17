@@ -3,46 +3,59 @@ import Cta from '../../components/cta/cta'
 import locationIcon from '../../assets/illustrations/icon-location.svg'
 import dateIcon from '../../assets/illustrations/icon-calendar.svg'
 import tanitimPdf from '../../assets/ıwd antalya 2026 tanıtım.pdf'
+import SectionTitle from '../../components/sectionTitle/sectionTitle'
 
 export default function Registration() {
   const content = {
-    title: '#WTMBreakThePattern',
+    title: '#BreakThePattern',
   }
   return (
-    <section className="registration container" id="registration">
-      <h2 className="registration__title">{content.title}</h2>
-      <div className="registration__content">
-        <section className="about" id="about">
-      <div className="about__text-container container">
-        <h2 className="about__title">
-          <span className="about__event">Etkinlik</span> Hakkında
-        </h2>
-        <p className="about__text">
-         Her yıl Google Developer toplulukları tarafından Mart ve Nisan aylarında organize edilen IWD etkinlikleri, teknoloji dünyasında kadınların görünürlüğünü ve yetkinliğini artırmayı hedefliyor.
-
-        💡 Konuşmalar, paneller, atölyeler ve ilham dolu hikâyelerle, kadın-erkek herkesin katılımına açık bu etkinliklerde birlikte öğreniyor, birlikte gelişiyoruz.
-
-        Bu yıl biz de GDG Antalya ve Women Techmakers Antalya olarak IWD 2026’i kutlamak için heyecanla hazırlanıyoruz. Çünkü biliyoruz ki teknoloji, ancak çeşitlilikle gelişir 💪
-          <span className="about__slogan">'BreakThePattern'</span>,
-        </p>
-        {/* <a
-          href="https://developers.google.com/womentechmakers?hl=es-419"
-          className="about__link"
-          target="_blank"
-        >
-          womentechmakers.com
-        </a> */}
-        <p>   </p>
-        <a
-          href={tanitimPdf}
-          className="about__link"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          IWD Antalya 2026 Tanıtım
-        </a>
+    <section className="registration" id="about">
+      <div className="speakers__title-container">
+        <SectionTitle
+          text={content.title}
+          direction="right"
+          style="green"
+          assetName="badge-vector"
+        />
       </div>
-    </section>
+      <div className="registration__content">
+        <section className="about">
+          <div className="about__text-container container">
+            <h2 className="about__title">
+              <span className="about__event">Etkinlik</span> Hakkında
+            </h2>
+            <p className="about__text">
+              Google Developer Group Antalya ve Women Techmakers iş birliğiyle,
+              International Women’s Day 2026 kapsamında bir araya geliyoruz!
+            </p>
+            <p className="about__text">
+              <span className="about__slogan">
+                &quot;Break the Pattern&quot;
+              </span>{' '}
+              temasıyla hazırladığımız bu özel günde; ilham veren konuşmalar,
+              girişimcilik hikayeleri ve teknolojiyle şekillenen bir gelecek
+              bizi bekliyor. 👩‍💻💜
+            </p>
+            <p className="about__text">
+              Her yıl Google Developer toplulukları tarafından Mart ve Nisan
+              aylarında organize edilen IWD etkinlikleri, teknoloji dünyasında
+              kadınların görünürlüğünü ve yetkinliğini artırmayı hedefliyor.
+              <br />
+              Konuşmalar, paneller, atölyeler ve ilham dolu hikâyelerle,
+              kadın-erkek herkesin katılımına açık bu etkinliklerde birlikte
+              öğreniyor, birlikte gelişiyoruz.
+            </p>
+            <a
+              href={tanitimPdf}
+              className="about__link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              IWD Antalya 2026 Tanıtım
+            </a>
+          </div>
+        </section>
         <div className="registration__info-container">
           <div className="registration__info">
             <img className="registration__icon" src={dateIcon} />
