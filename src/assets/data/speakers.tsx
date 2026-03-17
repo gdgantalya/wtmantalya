@@ -1,7 +1,7 @@
 const speakers = [
   {
     name: 'Aylin Bederli Tumay',
-    picture: 'Aylin-bederlı-tumay.PNG',
+    picture: 'Aylin.jpeg',
     bio: 'Antalya OSB Teknopark müdürü ',
     social: [
       {
