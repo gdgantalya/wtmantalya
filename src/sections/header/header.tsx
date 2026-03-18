@@ -2,15 +2,6 @@ import './header.scss'
 import wtmLogo from '../../assets/wtm-logo-bw.svg'
 
 export default function Header() {
-  const scrollToSection = (elementId: string) => {
-    setTimeout(() => {
-      const section = document.querySelector(elementId)
-      if (section) {
-        section.scrollIntoView({ behavior: 'smooth', block: 'start' })
-      }
-    }, 0)
-  }
-
   return (
     <section className="header">
       <div className="header__mobile-content">
