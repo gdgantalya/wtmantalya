@@ -43,13 +43,14 @@ export default function Agenda() {
 
   const agendaInfo: AgendaBlock[] = [
     {
-      block: '12:00',
+      block: '12:30',
       talks: [
         {
           topicMain: {
-            from: '12:00',
+            from: '12:30',
             to: '13:00',
             title: 'Kayıt ve Açılış',
+            speaker: 'Organizatörler: Beyza Çetin, Alper Bayram',
             color: 'red',
           },
           topicSecondary: null,
@@ -63,9 +64,9 @@ export default function Agenda() {
           topicMain: {
             from: '13:00',
             to: '13:30',
-            title: 'Konuşma 1 Konusu',
+            title: 'Girişimcilik Ekosisteminde Teknoparkların Rolü',
             color: 'blue',
-            speaker: 'Konuşmacı 1',
+            speaker: 'Dr. Aylin Tümay',
           },
           topicSecondary: null,
         },
@@ -77,25 +78,41 @@ export default function Agenda() {
         {
           topicMain: {
             from: '13:50',
-            to: '14:30',
-            title: 'Konuşma 2 Konusu',
+            to: '14:20',
+            title:
+              'Trendyolda AI ile iş kararlarından müşteriye uzanan geliştirme süreci',
             color: 'green',
-            speaker: 'Konuşmacı 2',
+            speaker: 'Buse Altaç',
           },
           topicSecondary: null,
         },
       ],
     },
     {
-      block: '14:50',
+      block: '14:40',
       talks: [
         {
           topicMain: {
-            from: '14:50',
-            to: '15:30',
-            title: 'Konuşma 3 Konusu',
-            speaker: 'Konuşmacı 3',
+            from: '14:40',
+            to: '15:00',
+            title: 'Zenova Gym, Duruş Bozukluğu ve Nefes Egzersizi',
+            speaker: 'Zenova Gym',
             color: 'red',
+          },
+          topicSecondary: null,
+        },
+      ],
+    },
+    {
+      block: '15:00',
+      talks: [
+        {
+          topicMain: {
+            from: '15:00',
+            to: '15:40',
+            title: 'Bir Günde MVP İnşa Edin: Flutter + Firebase',
+            speaker: 'Kadriye Macit',
+            color: 'blue',
           },
           topicSecondary: null,
         },
@@ -110,7 +127,7 @@ export default function Agenda() {
             to: '16:00',
             title: 'Kapanış ve Hediye Çekilişi',
             speaker: 'Hediye Çekilişi',
-            color: 'blue',
+            color: 'green',
           },
           topicSecondary: null,
         },

@@ -52,22 +52,25 @@
 
   &__list {
     display: grid;
-    grid-template-columns: 280px;
+    grid-template-columns: repeat(2, 1fr);
     align-items: center;
     justify-content: center;
     justify-items: center;
     margin: 0 auto;
-    gap: 30px;
+    gap: 20px;
+    padding: 20px 0;
     animation: fadeInUp 0.8s ease-out;
 
     @media screen and (min-width: $viewport-md) {
-      gap: 45px;
-      grid-template-columns: repeat(2, 260px);
-      grid-template-rows: auto;
+      gap: 30px;
+      grid-template-columns: repeat(3, 1fr);
     }
 
     @media screen and (min-width: $viewport-lg) {
-      grid-template-columns: repeat(4, 260px);
+      gap: 40px;
+      grid-template-columns: repeat(3, 1fr);
+      max-width: 960px;
+      margin: 0 auto;
     }
 
     li {
@@ -92,8 +95,8 @@
   }
 
   &__card-inner {
-    width: 360px;
-    height: 220px;
+    width: 100%;
+    height: 160px;
     background: #ffffff;
     border-radius: 12px;
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
