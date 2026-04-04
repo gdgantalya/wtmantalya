@@ -242,7 +242,11 @@
 
       window.addEventListener('load', async () => {
         try {
-          const res = await fetch('email-sablonu.xlsx')
+          const res = await fetch('./email-sablonu.xlsx')
+          if (!res.ok)
+            throw new Error(
+              `Excel dosyası yüklenemedi: ${res.status} ${res.statusText}`
+            )
           const buf = await res.arrayBuffer()
           const wb = XLSX.read(buf, { type: 'array' })
           const ws = wb.Sheets[wb.SheetNames[0]]
